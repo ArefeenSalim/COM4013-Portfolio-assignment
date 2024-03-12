@@ -4,7 +4,7 @@ print ("2 Triangle")
 print ("3 Right Angled Triangle")
 print ("4 Paralellogram")
 print ("5 Rectangle")
-print ("6 ")
+print ("6 Rhombus")
 print ("7 ")
 print ("8 ")
 
@@ -44,6 +44,13 @@ def Rectangle():
             print("* ", end="")
         print()
 
+def Rhombus():
+   n = int(input("Enter the length of the side of a rhombus: ")) 
+   for i in range(1, n + 1):
+       print(" " * (n - i) + "* " * i)
+   for i in range(n - 1, 0, -1):
+       print(" " * (n - i) + "* " * i)
+
 def Shape():
     while True:
         shape = input ("Enter the number of the shape: ")
@@ -67,9 +74,10 @@ def Shape():
             print("5 Rectangle")
             Rectangle()
             break
-        #elif shape == "6":
-            #print("6")
-            #break
+        elif shape == "6":
+            print("6 Rhombus")
+            Rhombus()
+            break
         #elif shape == "7":
             #print("7")
             #break
