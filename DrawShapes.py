@@ -5,7 +5,7 @@ print ("3 Right Angled Triangle")
 print ("4 Paralellogram")
 print ("5 Rectangle")
 print ("6 Rhombus")
-print ("7 ")
+print ("7 V")
 print ("8 ")
 
 
@@ -37,10 +37,10 @@ def Paralellogram():
         print() 
 
 def Rectangle():
-    n = int(input("Enter the height of the rectangle: "))
-    m = int(input("Enter the length of the base: "))
-    for i in range(n):
-        for j in range(m):
+    h = int(input("Enter the height of the rectangle: "))
+    b = int(input("Enter the length of the base: "))
+    for i in range(h):
+        for j in range(b):
             print("* ", end="")
         print()
 
@@ -50,6 +50,18 @@ def Rhombus():
        print(" " * (n - i) + "* " * i)
    for i in range(n - 1, 0, -1):
        print(" " * (n - i) + "* " * i)
+
+def V():
+    h = int(input("Enter the height of the 'V': "))
+    for i in range(h):
+        for j in range(i):
+          print(" ", end="")
+        print("**", end="")
+        for k in range(2 * (h - i) - 1):
+          print(" ", end="")
+        if i != h - 1:
+          print("**", end="")
+        print()
 
 def Shape():
     while True:
@@ -78,9 +90,10 @@ def Shape():
             print("6 Rhombus")
             Rhombus()
             break
-        #elif shape == "7":
-            #print("7")
-            #break
+        elif shape == "7":
+            print("7 V")
+            V()
+            break
         #elif shape == "8":
             #print("8")
             #break
