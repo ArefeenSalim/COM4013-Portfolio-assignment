@@ -4,10 +4,7 @@ print ("2 Triangle")
 print ("3 Right Angled Triangle")
 print ("4 Paralellogram")
 print ("5 Rectangle")
-print ("6 Rhombus")
-print ("7 V")
-print ("8 Hourglass")
-
+print ("6 Hourglass")
 
 def Square():
     n = int(input("Enter the size of the square: "))
@@ -51,32 +48,20 @@ def Rectangle():
         print()
     print(f"Area: {h * b}")
 
-def Rhombus():
-   n = int(input("Enter the length of the side of a rhombus: ")) 
-   for i in range(1, n + 1):
-       print(" " * (n - i) + "* " * i)
-   for i in range(n - 1, 0, -1):
-       print(" " * (n - i) + "* " * i)
-
-def V():
-    h = int(input("Enter the height of the 'v': "))
-    for i in range(h):
-        for j in range(i):
-            print(" ", end="")
-        print("**", end="")
-        middle_space = 2 * (h - i) - 3
-        for k in range(middle_space):
-            print(" ", end="")
-        if i != h - 1:
-            print("**", end="")
-        print()
-
 def Hourglass():
-    length = int(input("Enter the length of the top/bottom of the hourglass: "))
-    for i in range(length, 0, -1):
-        print((' ' * (length - i) + '*' * (2 * i - 1)).center(2 * length - 1))
-    for i in range(1, length + 1):
-        print((' ' * (length - i) + '*' * (2 * i - 1)).center(2 * length - 1))
+    while True:
+        n = int(input("Enter the height of the shape: "))
+        if n % 2 == 0:
+            break 
+        else:
+            print("Please input an even number as the height") 
+    n2 = n // 2
+    b = n2 
+    for i in range(n2, 0, -1):
+        print(" " * (b - i) + "* " * i)
+    for i in range(1, n2 + 1):
+        print(" " * (b - i) + "* " * i)
+    print(f"Area: {b * n2}")
 
 
 
@@ -104,15 +89,7 @@ def Shape():
             Rectangle()
             break
         elif shape == "6":
-            print("6 Rhombus")
-            Rhombus()
-            break
-        elif shape == "7":
-            print("7 V")
-            V()
-            break
-        elif shape == "8":
-            print("8 Hourglass")
+            print("6 Hourglass")
             Hourglass()
             break
         else: 
