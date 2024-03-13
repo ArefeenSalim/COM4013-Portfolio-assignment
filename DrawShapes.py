@@ -13,18 +13,23 @@ def Square():
     n = int(input("Enter the size of the square: "))
     for i in range(n):
         print("* "*n)
+    print(f"Area: {n*n}")    
 
 def Triangle():
     n = int(input("Enter the height of the triangle: "))
-    for i in range(1, n + 1):
+    b = int(input("Enter the base of triangle: "))
+    for i in range(1, n+1):
         print(" "* (n - i) + "* " * i)
+    print(f"Area: {(b * n) / 2}")
 
 def RightAngledTriangle():
     n = int(input("Enter the height of the right angled triangle: "))
+    b = int(input("Enter the base length of the right angled triangle: "))
     for i in range(n):
         for j in range(i + 1):
             print("* ", end="")
         print()
+    print(f"Area: {(b * n) / 2}")
 
 def Paralellogram():
     n = int(input("Enter the height of the paralellogram: "))
@@ -35,6 +40,7 @@ def Paralellogram():
         for j in range(m):
             print("* ", end="")
         print() 
+    print(f"Area: {n * m}")
 
 def Rectangle():
     h = int(input("Enter the height of the rectangle: "))
@@ -43,6 +49,7 @@ def Rectangle():
         for j in range(b):
             print("* ", end="")
         print()
+    print(f"Area: {h * b}")
 
 def Rhombus():
    n = int(input("Enter the length of the side of a rhombus: ")) 
