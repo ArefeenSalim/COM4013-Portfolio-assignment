@@ -6,7 +6,7 @@ print ("4 Paralellogram")
 print ("5 Rectangle")
 print ("6 Rhombus")
 print ("7 V")
-print ("8 ")
+print ("8 Hourglass")
 
 
 def Square():
@@ -52,16 +52,26 @@ def Rhombus():
        print(" " * (n - i) + "* " * i)
 
 def V():
-    h = int(input("Enter the height of the 'V': "))
+    h = int(input("Enter the height of the 'v': "))
     for i in range(h):
         for j in range(i):
-          print(" ", end="")
+            print(" ", end="")
         print("**", end="")
-        for k in range(2 * (h - i) - 1):
-          print(" ", end="")
+        middle_space = 2 * (h - i) - 3
+        for k in range(middle_space):
+            print(" ", end="")
         if i != h - 1:
-          print("**", end="")
+            print("**", end="")
         print()
+
+def Hourglass():
+    length = int(input("Enter the length of the top/bottom of the hourglass: "))
+    for i in range(length, 0, -1):
+        print((' ' * (length - i) + '*' * (2 * i - 1)).center(2 * length - 1))
+    for i in range(1, length + 1):
+        print((' ' * (length - i) + '*' * (2 * i - 1)).center(2 * length - 1))
+
+
 
 def Shape():
     while True:
@@ -94,9 +104,10 @@ def Shape():
             print("7 V")
             V()
             break
-        #elif shape == "8":
-            #print("8")
-            #break
+        elif shape == "8":
+            print("8 Hourglass")
+            Hourglass()
+            break
         else: 
             print ("invalid choice")
 
