@@ -8,6 +8,8 @@ print ("5 Modulus %")
 print ("6 Factorial !")
 print ("7 Exponents ^ (Squared/cubed)")
 
+
+
 def get_integer(prompt):
     value = input(prompt)
     if value.lstrip('-').isdigit() or value.isdigit():

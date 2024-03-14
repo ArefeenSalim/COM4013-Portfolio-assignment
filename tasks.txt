@@ -1,0 +1,13 @@
+wake up;True
+wash you face;False
+pray;False
+brush;True
+open the windows;False
+make breakfast and eat it;False
+call mummmy and papa;False
+pack up;False
+take a shower;False
+get dressed;False
+skincare;False
+make your bed;False
+drink lassi;False
