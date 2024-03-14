@@ -189,7 +189,7 @@ def main():
     continueShape = True
     while continueShape:
         Shape()
-        doMore= input ("Do you want to draw more shapes? (yes)")
+        doMore= input ("Do you want to draw more shapes? (type (yes) if you want to draw more shapes or press enter to exit)")
         if doMore.lower() == "yes":
             print ("great!")
         else:

@@ -191,7 +191,7 @@ def main():
     continueCalc = True
     while continueCalc:
         Calculator()
-        doMore= input ("Do you want to calculate agin? (yes)")
+        doMore= input ("Do you want to calculate agin? (type (yes) if you want to calculate again or press enter to exit)")
         if doMore.lower() == "yes":
             print ("great!")
         else:
