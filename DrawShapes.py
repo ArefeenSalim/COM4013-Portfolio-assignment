@@ -7,7 +7,7 @@ print ("4 Paralellogram")
 print ("5 Rectangle")
 print ("6 Hourglass")
 
-#################################################################################################
+
 
 def Square():
     n = int(input("Enter the size of the square: "))
@@ -23,7 +23,7 @@ def Square():
             print("* " * n)
     print(f"Area: {n * n}")
 
-##################################################################################################
+
 
 def EquilateralTriangle():
     n = int(input("Enter the height of the triangle: "))
@@ -39,7 +39,7 @@ def EquilateralTriangle():
             print(" " * (n - i) + "* " * i)
     print(f"Area: {(n * n) / 2}")
 
-##################################################################################################
+
 
 def RightAngledTriangle():
     n = int(input("Enter the height of the right angled triangle: "))
@@ -56,7 +56,7 @@ def RightAngledTriangle():
             print('* ' * (i + 1))
     print(f"Area: {(b * n) / 2}")
 
-##################################################################################################
+
 
 def Parallelogram():
     n = int(input("Enter the height of the parallelogram: "))
@@ -75,7 +75,7 @@ def Parallelogram():
         print() 
     print(f"Area: {n * m}")
 
-##################################################################################################    
+    
 
 def Rectangle():
     h = int(input("Enter the height of the rectangle: "))
@@ -88,7 +88,7 @@ def Rectangle():
             print('*' * b)
     print(f"Area: {h * b}")
 
-##################################################################################################
+
 
 def Hourglass():
     while True:
@@ -114,7 +114,7 @@ def Hourglass():
             print(" " * (n2 - i) + "* " * i)
     print(f"Area: {(b * n2)*2}")
 
-##################################################################################################
+
 
 def Shape():
     while True:

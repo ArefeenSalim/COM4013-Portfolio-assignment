@@ -8,7 +8,7 @@ print ("5 Modulus %")
 print ("6 Factorial !")
 print ("7 Exponents ^ (Squared/cubed)")
 
-############################################################################################
+
 
 def Addition():
     n1= int(input("enter the first number:"))
@@ -16,7 +16,7 @@ def Addition():
     sum = n1 + n2
     print ("Sum of", n1, "and", n2, "is", sum)
 
-############################################################################################
+
 
 def Subtraction():
     n1= int(input("enter the first number:"))
@@ -24,7 +24,7 @@ def Subtraction():
     difference = n1 - n2
     print (f"The difference of {n1} and {n2} is {difference}")
 
-############################################################################################
+
 
 def Multiplication():
     n1= int(input("enter the first number:"))
@@ -32,7 +32,7 @@ def Multiplication():
     product = n1 * n2
     print (f"The result of multiplying {n1} and {n2} is {product}")
 
-############################################################################################
+
 
 def Division():
     n1= int(input("enter the dividend:"))
@@ -47,7 +47,7 @@ def Division():
             print(f"Remainder: {remainder}")
             break
 
-############################################################################################
+
 
 def Modulus():
     n1= int(input("enter the dividend:"))
@@ -60,7 +60,7 @@ def Modulus():
             print(f"The result of {n1} % {n2} is: {remainder}")
             break
 
-############################################################################################
+
 
 def Factorial():
     while True:
@@ -77,7 +77,7 @@ def Factorial():
             print(f"The factorial of {n} is {factorial}")
             break
 
-############################################################################################
+
 
 def SquaredExponent():
     while True:
@@ -90,7 +90,7 @@ def SquaredExponent():
             print (f"the square of {n} is {sq}")
             break
 
-############################################################################################
+
 
 def CubedExponent():
     while True:
@@ -103,7 +103,7 @@ def CubedExponent():
             print (f"the cube of {n} is {cube}")
             break
 
-############################################################################################
+
 
 def Calculator():
     while True:
