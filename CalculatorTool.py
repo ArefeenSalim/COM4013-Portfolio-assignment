@@ -88,6 +88,7 @@ def SquaredExponent():
         else:
             sq = n ** 2
             print (f"the square of {n} is {sq}")
+            break
 
 ############################################################################################
 
@@ -100,6 +101,7 @@ def CubedExponent():
         else:
             cube = n ** 3
             print (f"the cube of {n} is {cube}")
+            break
 
 ############################################################################################
 
@@ -144,6 +146,7 @@ def Calculator():
                     break
                 else:
                     print ("Invalid input, please input 2 for squaring and 3 for cubing")
+            break
         else:
             print ("Invalid input, try again")
 
