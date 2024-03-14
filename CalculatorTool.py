@@ -168,6 +168,7 @@ def Calculator():
         elif toolChoice == "7":
             print ("7 Exponents ^ (Squared/cubed)")
             while True:
+                # internal loop allowing the user to choose what kind of exponential operation they want to use and directs to the respective operation
                 exponenentChoice= input("enter 2 for squaring, enter 3 for cubing")
                 if exponenentChoice == "2":
                     print ("^2 squaring")
