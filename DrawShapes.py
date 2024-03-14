@@ -7,10 +7,16 @@ print ("4 Paralellogram")
 print ("5 Rectangle")
 print ("6 Hourglass")
 
+def get_integer(prompt):
+    user_input = input(prompt)
+    while not user_input.isdigit():
+        user_input = input("Invalid input. Please enter a positive number: ")
+    return int(user_input)
+
 
 
 def Square():
-    n = int(input("Enter the size of the square: "))
+    n = get_integer("Enter the size of the square: ")
     outline = input("Do you want the shape outlined? (yes or no): ").lower()
     if outline == "yes":
         for i in range(n):
@@ -26,7 +32,7 @@ def Square():
 
 
 def EquilateralTriangle():
-    n = int(input("Enter the height of the triangle: "))
+    n = get_integer("Enter the height of the triangle: ")
     outline = input("Do you want the shape outlined? (yes or no): ").lower()
     if outline == "yes": 
         for i in range(1, n+1):
@@ -42,8 +48,8 @@ def EquilateralTriangle():
 
 
 def RightAngledTriangle():
-    n = int(input("Enter the height of the right angled triangle: "))
-    b = int(input("Enter the base length of the right angled triangle: "))
+    n = get_integer("Enter the height of the right angled triangle: ")
+    b = get_integer("Enter the base length of the right angled triangle: ")
     outline = input("Do you want to see the outline? (yes or no): ").lower()
 
     for i in range(n):
@@ -59,8 +65,8 @@ def RightAngledTriangle():
 
 
 def Parallelogram():
-    n = int(input("Enter the height of the parallelogram: "))
-    m = int(input("Enter the length of the base: "))
+    n = get_integer("Enter the height of the parallelogram: ")
+    m = get_integer("Enter the length of the base: ")
     outline = input("Do you want to see the outline only (yes or no)? ").lower()
     for i in range(n):
         print(" " * (n - i - 1), end="")
@@ -78,8 +84,8 @@ def Parallelogram():
     
 
 def Rectangle():
-    h = int(input("Enter the height of the rectangle: "))
-    b = int(input("Enter the length of the base: "))
+    h = get_integer("Enter the height of the rectangle: ")
+    b = get_integer("Enter the length of the base: ")
     outline = input("Do you want to see the outline only (yes or no)? ").lower()
     for i in range(h):
         if outline == "yes" and i != 0 and i != h - 1: 
@@ -92,7 +98,7 @@ def Rectangle():
 
 def Hourglass():
     while True:
-        n = int(input("Enter the height of the shape: "))
+        n = get_integer("Enter the height of the shape: ")
         if n % 2 == 0:
             break 
         else:

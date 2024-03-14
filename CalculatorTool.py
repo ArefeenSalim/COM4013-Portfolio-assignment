@@ -8,36 +8,44 @@ print ("5 Modulus %")
 print ("6 Factorial !")
 print ("7 Exponents ^ (Squared/cubed)")
 
+def get_integer(prompt):
+    value = input(prompt)
+    if value.lstrip('-').isdigit() or value.isdigit():
+        return int(value)
+    else:
+        print("Invalid input! Only integers are allowed.")
+        return get_integer(prompt)
+
 
 
 def Addition():
-    n1= int(input("enter the first number:"))
-    n2= int(input("enter the second number:"))
+    n1= get_integer("enter the first number:")
+    n2= get_integer("enter the second number:")
     sum = n1 + n2
     print ("Sum of", n1, "and", n2, "is", sum)
 
 
 
 def Subtraction():
-    n1= int(input("enter the first number:"))
-    n2= int(input("enter the second number:"))
+    n1= get_integer("enter the first number:")
+    n2= get_integer("enter the second number:")
     difference = n1 - n2
     print (f"The difference of {n1} and {n2} is {difference}")
 
 
 
 def Multiplication():
-    n1= int(input("enter the first number:"))
-    n2= int(input("enter the second number:"))
+    n1= get_integer("enter the first number:")
+    n2= get_integer("enter the second number:")
     product = n1 * n2
     print (f"The result of multiplying {n1} and {n2} is {product}")
 
 
 
 def Division():
-    n1= int(input("enter the dividend:"))
+    n1= get_integer("enter the dividend:")
     while True:
-        n2= int(input("enter the divisor:"))
+        n2= get_integer("enter the divisor:")
         if n2 == 0:
             print("Division by zero is not allowed as it is a Math error.")
         else:
@@ -50,9 +58,9 @@ def Division():
 
 
 def Modulus():
-    n1= int(input("enter the dividend:"))
+    n1= get_integer("enter the dividend:")
     while True:
-        n2= int(input("enter the divisor:"))
+        n2= get_integer("enter the divisor:")
         if n2 == 0:
             print("Error: Division by zero is not allowed.")
         else:
@@ -64,7 +72,7 @@ def Modulus():
 
 def Factorial():
     while True:
-        n = int(input("Enter a non-negative integer:"))
+        n = get_integer("Enter a non-negative integer:")
         if n < 0:
             print("Invalid please enter a non-negative integer.")
         else:
@@ -81,7 +89,7 @@ def Factorial():
 
 def SquaredExponent():
     while True:
-        n = int(input("enter your number:"))
+        n = get_integer("enter your number:")
         if n == 0:
             print ("the square of 0 is 0")
             break
@@ -94,7 +102,7 @@ def SquaredExponent():
 
 def CubedExponent():
     while True:
-        n = int(input("enter your number:"))
+        n = get_integer("enter your number:")
         if n == 0:
             print ("the cube of 0 is 0")
             break
