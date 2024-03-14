@@ -164,5 +164,3 @@ def main():
             continueShape = False
 main()    
 
-if __name__ == "__main__":
-    main()
