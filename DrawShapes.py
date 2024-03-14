@@ -24,9 +24,8 @@ def Square():
 
 ##################################################################################################
 
-def Triangle():
+def EquilateralTriangle():
     n = int(input("Enter the height of the triangle: "))
-    b = int(input("Enter the base of the triangle: "))
     outline = input("Do you want the shape outlined? (yes or no): ").lower()
     if outline == "yes": 
         for i in range(1, n+1):
@@ -37,7 +36,7 @@ def Triangle():
     else:
         for i in range(1, n+1):
             print(" " * (n - i) + "* " * i)
-    print(f"Area: {(b * n) / 2}")
+    print(f"Area: {(n * n) / 2}")
 
 ##################################################################################################
 
@@ -58,8 +57,8 @@ def RightAngledTriangle():
 
 ##################################################################################################
 
-def Paralellogram():
-    n = int(input("Enter the height of the paralellogram: "))
+def Parallelogram():
+    n = int(input("Enter the height of the parallelogram: "))
     m = int(input("Enter the length of the base: "))
     outline = input("Do you want to see the outline only (yes or no)? ").lower()
     for i in range(n):
@@ -125,7 +124,7 @@ def Shape():
             break
         elif shape == "2":
             print("2 Triangle")
-            Triangle()
+            EquilateralTriangle()
             break
         elif shape== "3":
             print("3 Right Angled Triangle")
@@ -133,7 +132,7 @@ def Shape():
             break
         elif shape == "4":
             print("4 Paralellogram")
-            Paralellogram()
+            Parallelogram()
             break
         elif shape == "5":
             print("5 Rectangle")
@@ -147,5 +146,13 @@ def Shape():
             print ("invalid choice")
 
 def main():
-    Shape()
+    while True:
+        Shape()
+        doMore= input ("Do you want to draw more shapes? (yes or no)")
+        if doMore != "yes":
+            print ("thanks for drawing shapes")
+            break
 main()    
+
+if __name__ == "__main__":
+    main()
