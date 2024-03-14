@@ -163,3 +163,6 @@ def main():
             print ("Thanks!Bye")
             continueShape = False
 main()    
+
+if __name__ == "__main__":
+    main()
