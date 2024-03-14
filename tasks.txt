@@ -11,3 +11,5 @@ get dressed;False
 skincare;False
 make your bed;False
 drink lassi;False
+make butter chicken;True
+lets nacho;False
