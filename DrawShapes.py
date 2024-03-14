@@ -1,3 +1,4 @@
+print ("This is a shape generator")
 print ("Choose your shape")
 print ("1 Sqaure ")
 print ("2 Triangle")
@@ -146,13 +147,13 @@ def Shape():
             print ("invalid choice")
 
 def main():
-    while True:
+    continueShape = True
+    while continueShape:
         Shape()
-        doMore= input ("Do you want to draw more shapes? (yes or no)")
-        if doMore != "yes":
-            print ("thanks for drawing shapes")
-            break
+        doMore= input ("Do you want to draw more shapes? (yes)")
+        if doMore.lower() == "yes":
+            print ("great!")
+        else:
+            print ("Thanks!Bye")
+            continueShape = False
 main()    
-
-if __name__ == "__main__":
-    main()
