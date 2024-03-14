@@ -155,7 +155,7 @@ def Hourglass():
 def Shape():
     while True:
         # this is the main loop and function control of the program
-        # allows user to choose their options and directs them to the respecting shape generator
+        # allows user to choose their options and directs them to the respective shape generator
         shape = input ("Enter the number of the shape: ")
         if shape == "1":
             print (" 1 Square")

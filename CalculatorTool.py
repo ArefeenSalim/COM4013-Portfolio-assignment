@@ -138,7 +138,7 @@ def CubedExponent():
 
 def Calculator():
     # this is the main loop and calculator function control of the program
-    # allows user to choose their options and directs them to the respecting operation
+    # allows user to choose their options and directs them to the respective operation
     while True:
         toolChoice= input ("Enter the number corresponding to the operation")
         if toolChoice == "1":
