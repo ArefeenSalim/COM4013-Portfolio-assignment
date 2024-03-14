@@ -1,7 +1,7 @@
 print ("This is a shape generator")
 print ("Choose your shape")
 print ("1 Sqaure ")
-print ("2 Triangle")
+print ("2 Equilateral Triangle")
 print ("3 Right Angled Triangle")
 print ("4 Paralellogram")
 print ("5 Rectangle")
