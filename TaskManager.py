@@ -70,7 +70,7 @@ def TaskManager(): #main function of the program, presenting a menu to the user 
         print("Task Manager")
         print("1. Add Task")
         print("2. List Tasks")
-        print("3. Mark Task Complete")
+        print("3. Mark Task Complete") 
         print("4. Remove Task")
         print("5. Exit")
         choice = input("Enter your choice: ")
