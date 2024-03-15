@@ -1,7 +1,6 @@
 wake up;True
 wash you face;False
 pray;True
-brush;True
 open the windows;False
 make breakfast and eat it;False
 call mummmy and papa;False
@@ -9,6 +8,7 @@ take a shower;False
 get dressed;False
 skincare;False
 make your bed;False
-drink lassi;False
+drink lassi;True
 make butter chicken;True
 eat pani puri;False
+balleballe;True

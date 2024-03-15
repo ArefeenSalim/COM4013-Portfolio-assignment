@@ -22,7 +22,7 @@ def Square():
     # the Square function implements an algorithm to generate a square, with the option to display an outlined or filled square.
     # the area is calculated and displayed, showing the application of geometric principles in programming.
     n = get_integer("Enter the size of the square: ")
-    outline = input("Do you want the shape outlined? (yes or no): ").lower()
+    outline = input("Do you want the shape outlined? (if yes then type (yes) else press enter key): ").lower()
     if outline == "yes":
         # a loop is used here to print each row of the square pattern.
         for i in range(n): # the range(n) generates a sequence from 0 to n-1, which corresponds to the rows of the square.
@@ -44,7 +44,7 @@ def Square():
 def EquilateralTriangle():
     # ask the user to input the height of the triangle.
     n = get_integer("Enter the height of the triangle: ")
-    outline = input("Do you want the shape outlined? (yes or no): ").lower()
+    outline = input("Do you want the shape outlined? (if yes then type (yes) else press enter key): ").lower()
     if outline == "yes": 
         # loop through the number of lines equal to the height of the triangle.
         for i in range(1, n+1):
@@ -66,7 +66,7 @@ def RightAngledTriangle():
     # ask the user to input the height and base of the triangle.
     n = get_integer("Enter the height of the right angled triangle: ")
     b = get_integer("Enter the base length of the right angled triangle: ")
-    outline = input("Do you want to see the outline? (yes or no): ").lower()
+    outline = input("Do you want to see the outline? (if yes then type (yes) else press enter key): ").lower()
 
     for i in range(n):
         if outline == 'yes':
@@ -84,7 +84,7 @@ def Parallelogram():
     # ask the user height and base of the paralellogram
     n = get_integer("Enter the height of the parallelogram: ")
     m = get_integer("Enter the length of the base: ")
-    outline = input("Do you want to see the outline only (yes or no)? ").lower()
+    outline = input("Do you want to see the outline only (if yes then type (yes) else press enter key)? ").lower()
     for i in range(n): # for loop to iterate over the height of the parallelogram
         print(" " * (n - i - 1), end="")
         # for loop to iterate over the length of the base of the parallelogram.
@@ -107,7 +107,7 @@ def Rectangle():
     # ask the user height and base of the rectangle
     h = get_integer("Enter the height of the rectangle: ")
     b = get_integer("Enter the length of the base: ")
-    outline = input("Do you want to see the outline only (yes or no)? ").lower()
+    outline = input("Do you want to see the outline only (if yes then type (yes) else press enter key)? ").lower()
     for i in range(h): # a loop that will run h number of times where h is the height of the rectangle.
         if outline == "yes" and i != 0 and i != h - 1: 
             print('*' + ' ' * (b - 2) + '*') # print the horizontal sides of the rectangle.
@@ -127,7 +127,7 @@ def Hourglass():
             print("Please input an even number as the height") 
     n2 = n // 2 # divides the height by 2 to work with the top and bottom halves of the hourglass
     b = n2 #  tores half the height into variable b as it will be the base of the shape, done to make it convinient to understand the code
-    outline = input("Do you want to see the outline only (yes or no)? ").lower()
+    outline = input("Do you want to see the outline only (if yes then type (yes) else press enter key)? ").lower()
     if outline == "yes":
         # prints the top half of the outline of the hourglass
         print("* " * n2) # prints the top line of asterisks
@@ -189,7 +189,7 @@ def main():
     continueShape = True
     while continueShape:
         Shape()
-        doMore= input ("Do you want to draw more shapes? (type (yes) if you want to draw more shapes or press enter to exit)")
+        doMore= input ("Do you want to draw more shapes? (type (yes) if you want to draw more shapes else press enter to exit)")
         if doMore.lower() == "yes":
             print ("great!")
         else:
